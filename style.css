@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    width: 80%;
+    background: #fff;
+    padding: 20px 60px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgb(158, 104, 178);
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .left-side{
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
+.content .left-side::before{
+    content: '';
+    position: absolute;
+    width: 1.5px;
+    height: 65%;
+    right: 40px;
+    top: 50%;
+    background: rgb(134, 129, 129);
+    transform: translateY(-50%);
+}
+
+.container .content .right-side{
+    width: 75%;
+}
+
+.container .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i{
+    font-size: 30px;
+    color: rgb(178, 83, 83);
+}
+
+.content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.content .left-side .details .textOne,
+.content .left-side .details .textTwo{
+    font-size: 14px;
+    color: rgb(144, 143, 143);
+}
+
+.content .right-side .topic-text{
+    font-size: 24px;
+    font-weight: 800;
+    color: #B197FC;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background: #faf4fa;
+    padding: 15px;
+    margin-bottom: 8px;
+}
+
+.right-side .message-box{
+    min-height: 110px;
+    
+}
+
+.right-side .button input[type="button"]{
+    color: antiquewhite;
+    background: #B197FC;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    margin-top: none;
+    border-radius: 4px;
+
+}
+
+.button input[type="button"]:hover{
+    background: blue;
+}
